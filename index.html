@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>BMI Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet"> <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="bmi-calculator-box-main">
+      <div class="title-section">
+        <h1 class="big-title">Calculate your BMI!</h1>
+      </div>
+      <div class="content-section">
+        <div class="bmi-img-1">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BMI_chart.png/1200px-BMI_chart.png" alt="BMI-img-1-graph">
+        </div>
+        <div class="calculator-section">
+          <label for="weight">Weight (kg): </label>
+          <input id="weight" type="numbers" name="weight" value="">
+          <br>
+          <label for="height">Height (m): </label>
+          <input id="height" type="numbers" name="height" value="">
+          <br>
+          <p id="BMI-result"></p>
+          <!--<input id="BMI-result" type="numbers" name="BMI-result" value="">-->
+          <br>
+          <button id="submit_button" onClick="action()" type="submit" name="Submit">Calculate</button>
+          <br>
+          <button onClick="clearAll()" type="" name="Clear">Clear</button>
+        </div>
+        <div class="bmi-img-2">
+          <img src="https://img.freepik.com/vector-premium/indice-masa-corporal-hombre-tabla-fitness-bmi-siluetas-masculinas-escala_53562-7067.jpg?w=2000" alt="BMI-img-2-pic">
+        </div>
+      </div>
+      <div id="hidden-info-section">
+        <div class="title-section">
+          <h1 class="big-title">Some important things you may not know about BMI!</h1>
+        </div>
+        <div class="info-section">
+          <div class="article">
+            <a href="https://journals.lww.com/nutritiontodayonline/fulltext/2015/05000/body_mass_index__obesity,_bmi,_and_health__a.5.aspx" target="_blank">
+              <div class="article-info">
+                <h2>BMI is a poor indicator of the percent of body fat...</h2>
+                <p>[...] it is increasingly clear that BMI is a rather poor indicator of percent of body fat. Importantly, the BMI also does not capture information on the mass of fat in different body sites. The latter is related not only to untoward health issues but to social issues as well [...]</p>
+              </div>
+              <div class="article-img">
+                <img src="images/articles-1.PNG" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="article">
+            <a href="https://www.tandfonline.com/doi/abs/10.1080/00325481.2019.1568019" target="_blank">
+              <div class="article-info">
+                <h2>BMI tells an incomplete story...</h2>
+                <p>[...] Most studies have used the body mass index (BMI) as an index of obesity, which is a poor index for total fat or fat distribution [...]</p>
+              </div>
+              <div class="article-img">
+                <img src="images/articles-2.PNG" alt="">
+              </div>
+            </a>
+          </div>
+
+          <div class="article">
+            <a href="https://journals.lww.com/nutritiontodayonline/fulltext/2015/05000/body_mass_index__obesity,_bmi,_and_health__a.5.aspx" target="_blank">
+              <div class="article-info">
+                <h2>BMI is a poor indicator of the percent of body fat...</h2>
+                <p>[...] it is increasingly clear that BMI is a rather poor indicator of percent of body fat. Importantly, the BMI also does not capture information on the mass of fat in different body sites. The latter is related not only to untoward health issues but to social issues as well [...]</p>
+              </div>
+              <div class="article-img">
+                <img src="images/articles-1.PNG" alt="">
+              </div>
+            </a>
+          </div>
+          <div class="article">
+            <a href="https://www.tandfonline.com/doi/abs/10.1080/00325481.2019.1568019" target="_blank">
+              <div class="article-info">
+                <h2>BMI tells an incomplete story...</h2>
+                <p>[...] Most studies have used the body mass index (BMI) as an index of obesity, which is a poor index for total fat or fat distribution [...]</p>
+              </div>
+              <div class="article-img">
+                <img src="images/articles-2.PNG" alt="">
+              </div>
+            </a>
+          </div>
+                    
+        </div>
+      </div>
+      <script type="text/javascript" src="script.js"></script>
+    </div>
+  </body>
+</html>
